@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="641px"
+    android:layout_height="176px">
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <View
+            android:id="@+id/gift_bg"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_marginLeft="60px"
+            android:background="@drawable/bg_gift_view" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/gift_user_icon"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24px"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gift_user_icon"
+            android:layout_marginLeft="20px"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/gift_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名字"
+                android:textSize="26px"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/gift_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="content"
+                android:textSize="22px"
+                android:textColor="#fff"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/double_num_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"
+        android:layout_alignBottom="@+id/content_container"
+        android:layout_marginBottom="-5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:text="连击x"
+            android:textColor="#f83c17"
+            android:textSize="34px"/>
+
+        <TextView
+            android:id="@+id/tv_double_hie_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="1"
+            android:textColor="#f83c17"
+            android:textSize="60px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@+id/content_container"
+        android:layout_marginBottom="51px"
+        android:layout_alignLeft="@+id/double_num_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="x"
+            android:textColor="#fff"
+            android:textSize="40px"/>
+
+        <TextView
+            android:id="@+id/tv_gift_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textSize="70px"
+            android:textColor="#fff"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_gift_icon"
+        android:layout_width="116px"
+        android:layout_height="116px"
+        android:layout_toLeftOf="@+id/double_num_container"
+        android:layout_marginRight="9px"/>
+</RelativeLayout>

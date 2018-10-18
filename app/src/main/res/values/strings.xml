@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LiveGiftAnimDemo</string>
+
+    <string name="send_gift_view_content">送出%1$s个%2$s</string>
+</resources>

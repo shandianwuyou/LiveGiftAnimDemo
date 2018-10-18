@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7f000000">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift1_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物1  数量2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift2_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物2  数量2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift3_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物3  数量2"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/container"
+        android:layout_marginBottom="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift1_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物1  数量1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift2_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物2  数量1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/gift3_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="礼物3  数量1"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_double_hit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/container2"
+        android:layout_marginBottom="40dp"
+        android:animateLayoutChanges="true"
+        android:gravity="bottom"
+        android:orientation="vertical"/>
+
+</RelativeLayout>
